@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kava Sage - Your coffee, redefined</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/machine.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <audio id="buttonClick" src="sound/buttonClick.mp3" autostart="false" ></audio>
+  
+  <audio id="beanSpill" src="sound/beansound.mp3" autostart="false" ></audio>
+  <audio id="roastBean" src="sound/roastingsound.mp3" autostart="false" ></audio>
+  <audio id="steamSound" src="sound/hissingsound.mp3" autostart="false" ></audio>
+  <audio id="popSound" src="sound/popsound.mp3" autostart="false" ></audio>
+
+</head>
+
+<body>
+   
+       <ul>
+
+        <li id="floatLeft"><a>Kava Sage</a></li>
+
+<li><a href="index.html">About us</a></li>
+    <li><a class="active" href="company.html">Home</a></li>
+</ul>
+    <div id="display">
+    
+        <div id="themachine">       
+        <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"><div id="droptext">Drop here</div><div id="downArrow"></div></div>
+          
+        <div id="selectionGuide" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <label id="llabel" class="labelFont" for="lbutton">Light</label>
+        <label id="mlabel" class="labelFont" for="mbutton">Medium</label>
+        <label id="dlabel" class="labelFont" for="dbutton">Dark</label>
+        <div id="levelSelection"><div id="droptextright">Select a level</div>
+        <div id="rightArrow"></div></div>
+          
+        <img id="lbutton" class="button" src="SVG/CoffeeSVG/Button.svg">
+        <img id="mbutton" class="button" src="SVG/CoffeeSVG/Button.svg">
+        <img id="dbutton" class="button" src="SVG/CoffeeSVG/Button.svg">
+        <img id="machine" src="SVG/CoffeeSVG/Roastingmachine.svg">
+        <img ondragstart="drag(event)" draggable="true" id="gBean" src="SVG/CoffeeSVG/Greenbean.svg">
+        <img id="smoke" src="SVG/CoffeeSVG/Smoke.svg"> 
+        </div> 
+        <div id="msgbox">
+            <h2 id="title">Roasting Machine</h2>
+          <p id="content">Roasting coffee transforms the chemical and physical properties of green coffee beans into roasted coffee products. <br><br>The roasting process is what produces the characteristic flavor of coffee by causing the green coffee beans to change in taste. <br><br> Unroasted beans contain similar if not higher levels of acids, protein, sugars, and caffeine as those that have been roasted, but lack the taste of roasted coffee beans due to the Maillard and other chemical reactions that occur during roasting.</p>
+          <img id="picture" src="Photos/RoastingMachine.jpg">
+
+      </div>
+      
+        <div id="nextArrow"></div><div id="action"></div>
+      <div id="nextArrow2"></div><div href="machine.html" id="resetButton">Start again</div>
+      <div href="quiz.html" id="quizButton">Take the quiz</div>
+
+
+</div>
+      
+
+
+       
+
+  
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script  src="js/treegrow.js"></script>
+    <script  src="js/machine.js"></script>
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
